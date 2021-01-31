@@ -1,5 +1,7 @@
 function start(){
     //$("body").css("background-color", "pink")
+
+    $("menu a:first").click();
 }
 
 $(window).on("load", start);
@@ -12,7 +14,7 @@ function loadpage(e) {
 
     var href = $(this).attr("href");    
     $("#content").load(href);
-    
+
 }
 
 $(document).on("click", "#menu a", loadpage);
